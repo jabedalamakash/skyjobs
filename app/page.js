@@ -6,9 +6,14 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <>
-    <h1>hello next</h1>
+    <section className='mb-32'>
     <Banner/>
+    </section>
+    <section className='mb-32'>
     <Categories/>
+      </section>
+   
+    
    
     
     

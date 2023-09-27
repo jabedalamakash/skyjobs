@@ -20,15 +20,21 @@ const Categories = async() => {
     const rdata= await resData();
     const data=rdata.categoryData
 
-    console.log(data);
+    
     return (
-        <div>
-            {/* {data.categoryname} */}
+        <section className='w-full sm:w-[80%] mx-auto px-5 sm:px-0'>
+            <div className='text-center'>
+            <h1 className='font-bold text-3xl mb-10'>Job Category List</h1>
+           <p className='mb-10'>Explore thousands of job opportunities with all the information you need. Its your future.</p>
+            </div>
+
+           <main className='grid grid-cols-1 sm:grid-cols-4 gap-10'>
             {data && data.map((item)=>{
                 return <Category key={item.id} data={item}/>
+                     
             })}
-            
-        </div>
+            </main>
+        </section>
     );
 };
 

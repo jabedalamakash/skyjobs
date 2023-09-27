@@ -2,7 +2,7 @@ export const data=
 [
     {
       id: 1,
-      companyname: "apple.png",
+      companyname: "/jobsimage/apple.png",
       jobtitle: "Modeling Architecture Engineer",
       companyname: "Apple Inc",
       remoteoronsite: "Onsite",
@@ -17,7 +17,7 @@ export const data=
     },
     {
       id: 2,
-      companyname: "google.jpg",
+      companyname: "/jobsimage/google.jpg",
       jobtitle: "Technical Database Engineer",
       companyname: "Google LLC",
       remoteoronsite: "Remote",
@@ -32,7 +32,7 @@ export const data=
     },
     {
       id: 3,
-      companyname: "facebook.png",
+      companyname: "/jobsimage/facebook.png",
       jobtitle: "Information Security Officer",
       companyname: "Meta Platforms, Inc",
       remoteoronsite: "Remote",
@@ -47,7 +47,7 @@ export const data=
     },
     {
       id: 4,
-      companyname: "tesla.png",
+      companyname: "/jobsimage/tesla.png",
       jobtitle: "Mechanical Engineer",
       companyname: "Tesla, Inc",
       remoteoronsite: "Onsite",
@@ -62,7 +62,7 @@ export const data=
     },
     {
       id: 5,
-      companyname: "netflix.png",
+      companyname: "/jobsimage/netflix.png",
       jobtitle: "Web Engineer",
       companyname: "Netflix, Inc",
       remoteoronsite: "Remote",
@@ -77,7 +77,7 @@ export const data=
     },
     {
       id: 6,
-      companyname: "amazon.png",
+      companyname: "/jobsimage/amazon.png",
       jobtitle: "Software Engineer",
       companyname: "Amazon.com, Inc",
       remoteoronsite: "Onsite",

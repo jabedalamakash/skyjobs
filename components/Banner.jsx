@@ -16,7 +16,7 @@ const Banner = () => {
             </div>
             <div className='w-full sm:w-1/2'>
                 <Image
-                src={"/banner.png"}
+                src={"/images/banner.png"}
                 height={500}
                 width={500}
                 alt="banner"
