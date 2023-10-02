@@ -21,6 +21,7 @@ const Footer = () => {
                     height={100}
                     width={100}
                     alt='socail'
+                    priority
                     className='w-32'/>
                 </Link>
                 </div>

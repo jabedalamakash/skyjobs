@@ -1,6 +1,7 @@
 import Banner from '@/components/Banner'
 import Categories from '@/components/Categories'
-import Btn from '@/ui components/Btn'
+import Jobs from '@/components/Jobs'
+import Btn from '@/uicomponents/Btn'
 import Image from 'next/image'
 
 export default function Home() {
@@ -11,6 +12,9 @@ export default function Home() {
     </section>
     <section className='mb-32'>
     <Categories/>
+      </section>
+      <section className='mb-32'>
+    <Jobs/>
       </section>
    
     

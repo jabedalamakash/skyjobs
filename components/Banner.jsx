@@ -1,4 +1,4 @@
-import Btn from '@/ui components/Btn';
+import Btn from '@/uicomponents/Btn';
 import Image from 'next/image';
 import React from 'react';
 

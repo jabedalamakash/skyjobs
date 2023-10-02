@@ -17,7 +17,7 @@ export const data=
     },
     {
       id: 2,
-      img: "/jobsimage/google.jpg",
+      img: "/jobsimage/google.png",
       jobtitle: "Technical Database Engineer",
       companyname: "Google LLC",
       remoteoronsite: "Remote",
