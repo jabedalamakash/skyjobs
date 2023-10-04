@@ -1,9 +1,10 @@
-import React from 'react';
+ "use client"
+import BarCharts from '@/components/BarCharts';
 
 const page = () => {
     return (
         <div>
-            <h1>Statistics</h1>
+            <BarCharts/>
         </div>
     );
 };

@@ -17,9 +17,12 @@ const Jobs =async () => {
             <p className='mb-10'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
    
-            <main className='grid grid-cols-1 gap-10 mx-auto sm:grid-cols-2 '>
+           
+            <main className='grid grid-cols-1 gap-10 mx-auto content-center place-content-center sm:grid-cols-2 '>
                <Job data={data}/>
             </main>
+
+
 
             
         </section>

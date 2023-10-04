@@ -7,7 +7,16 @@ import {toast } from 'react-hot-toast';
 const ApplyProvider = ({children}) => {
 
 
-    const[applied,setApplied]=useState([])                  
+
+
+    const[applied,setApplied]=useState([]);
+
+
+
+
+     
+     
+
 
     const handleApply=(data)=>{
         if(!applied.includes(data)){
@@ -24,20 +33,19 @@ const ApplyProvider = ({children}) => {
 
     // console.log(applied);
     // localStorage getItem
-    // useEffect(()=>{
-    //     const data=localStorage.getItem('apply');
-    //     // if(data){
-    //     //     setApplied(JSON.parse(data))
-    //     // }
-    //     setApplied(JSON.parse(data))
+    useEffect(()=>{
+        const data=localStorage.getItem('apply');
+        if(data){
+           setApplied(JSON.parse(data))
+        }
     
-    //  },[])
+     },[]);
 
-    //  // localStorage setItem
-    //  useEffect(()=>{
-    //     localStorage.setItem('apply', JSON.stringify(applied));
 
-    //  },[applied])
+     // localStorage setItem
+     useEffect(()=>{
+        localStorage.setItem('apply', JSON.stringify(applied));
+     },[applied])
 
     return (
         <div>

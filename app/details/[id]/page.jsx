@@ -13,7 +13,7 @@ const page =async ({params}) => {
     // console.log(id);
     
     return (
-        <section>
+        <section className='mx-auto'>
             <div className='bg-[#F9F9FF] relative  py-32'>
                 <Image
                 src={"/images/vector.png"}
