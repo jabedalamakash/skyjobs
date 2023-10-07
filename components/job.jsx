@@ -11,7 +11,7 @@ const Job = ({data}) => {
     const [value,setValue]=useState(4);
     return (
         <>
-        <section>
+        <section className='grid grid-cols-1 gap-10 mx-auto content-center place-content-center sm:grid-cols-2 '>
         {/* className='grid grid-cols-1 gap-10 mx-auto content-center place-content-center sm:grid-cols-2 ' */}
 
         
@@ -19,7 +19,7 @@ const Job = ({data}) => {
         {data && data.slice(0,value).map((data)=>{
 
             return <main key={data.id}>
-            <section className='border-2 grid  grid-cols-2 border-gray-300 p-5'>
+            <section className='border-2 border-gray-300 p-5 mb-10'>
             <Image
             src={data.img}
             height={400}
@@ -58,16 +58,16 @@ const Job = ({data}) => {
                 </main> 
         })
        }
-
+     </section>
      
-            <div className={value === data.length ? 'hidden' : ''}>
+            <div className={value === data.length ? 'hidden' : 'text-center'}>
                 <button
                     onClick={() => setValue(data.length)}
                     className="px-4 py-3 mx-auto rounded-xl  text-center text-white font-bold bg-gradient-to-r from-indigo-400 to-purple-400">
                     Show All Jobs</button>
  
             </div>
-            </section>
+           
         </>
        
     );

@@ -36,15 +36,15 @@ const Nav = () => {
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal  px-1">
     <li><Link 
-        className={`  link ${pathname === '/' ? ' text-[#808EFE]' : ''} no-underline text-gray-600`} href="/">Home</Link></li>
+        className={`  link ${pathname === '/' ? 'active text-[#808EFE] font-bold ' : ''} no-underline text-gray-600`} href="/">Home</Link></li>
         <li><Link
-        className={`  link ${pathname === '/jobs' ? 'text-[#808EFE]' : ''} no-underline text-gray-600`} href="/jobs">Jobs</Link></li>
+        className={`  link ${pathname === '/jobs' ? 'active text-[#808EFE] font-bold ' : ''} no-underline text-gray-600`} href="/jobs">Jobs</Link></li>
         <li><Link
-        className={` link ${pathname === '/applied' ? 'text-[#808EFE]' :''} no-underline text-gray-600`} href="/applied">Applied Jobs</Link></li>
+        className={` link ${pathname === '/applied' ? 'active text-[#808EFE] font-bold ' :''} no-underline text-gray-600`} href="/applied">Applied Jobs</Link></li>
          <li> <Link
-        className={` link ${pathname === '/statistics' ? 'text-[#808EFE]' : ''} no-underline text-gray-600`} href="/statistics">Statistics</Link></li>
+        className={` link ${pathname === '/statistics' ? 'active text-[#808EFE] font-bold ' : ''} no-underline text-gray-600`} href="/statistics">Statistics</Link></li>
         <li>        <Link
-        className={` link ${pathname === '/blogs' ? 'text-[#808EFE]' : ''} no-underline text-gray-600`} href="/blogs">Blogs</Link></li>
+        className={` link ${pathname === '/blogs' ? 'active text-[#808EFE] font-bold ' : ''} no-underline text-gray-600`} href="/blogs">Blogs</Link></li>
 
 
     </ul>

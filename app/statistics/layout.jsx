@@ -3,11 +3,9 @@ import SideBar from './SideBar';
 
 const layout = ({children}) => {
     return (
-        <div className='flex'>
-            
+        <div className='sm:flex'>
             <SideBar/>
-            <main className='w-full px-5 sm:px-0'>
-            {/* w-full sm:w-[80%]  mx-auto px-5 sm:px-5 */}
+            <main className='w-full'>
             {children}  
             </main>
 

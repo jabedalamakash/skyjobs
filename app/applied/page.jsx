@@ -9,16 +9,18 @@ const page = () => {
     const{applied}=useContext(ApplyContext);
 
     // const data=applied;
+    console.log(applied);
 
 
 
     return (
         <>
+    
          <main className='w-full sm:w-[80%] py-32 mx-auto px-5 sm:px-5'>
-         { applied && (applied.map((data)=>{
+         { applied.length==1 && (applied.map((data)=>{
             return <>
             
-        <section key={data[0]}>
+        <section key={data.id}>
             
             <div className='border-2 flex justify-between mb-20 items-center border-gray-300 p-5'>
                 <main>
@@ -88,35 +90,3 @@ const page = () => {
 };
 
 export default page;
-
-
-
-{/* <div className='border-2  border-gray-300 p-5'>
-<Image
-src={data.img}
-height={400}
-width={400}
-alt={data.jobtitle}
-className='w-48 mb-10'/>
-
-<h2 className='text-xl font-bold mb-5'>{data.jobtitle}</h2>
-<p className='mb-5'> {data.companyname}</p>
-<div className='flex gap-10 mb-5'>
-    <p className='border-2  border-indigo-400 rounded-md p-3'>{data.remoteoronsite}</p>
-    <p className='border-2  border-indigo-400 rounded-md p-3'>{data.fullorparttime}</p>
-</div>
-<div className='flex gap-10 mb-5'>
-    <p> {data.location}</p>
-    <p>{data.salary}</p>
-</div>
-
-
-    <Link href={`/details/${data.id}`}
-    className='px-4 py-3 rounded-xl text-white font-bold bg-gradient-to-r from-indigo-400 to-purple-400'>
-    View Details</Link>
-
-
-
-
-
-</div> */}

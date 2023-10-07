@@ -3,8 +3,8 @@ import React from 'react';
 
 const SideBar = () => {
     return (
-        <div>
-            <aside className='flex h-[100%] w-60 bg-slate-900 text-white flex-col '>
+        <section className='hidden sm:block'>
+            <aside className='flex flex-col h-[100%] w-60 bg-slate-900 text-white '>
                 <div className='px-10  py-5  my-10  '>
                     <Link className=' text-purple-400 text-2xl font-bold ' href="/">Dashboard</Link>
                 </div>
@@ -34,7 +34,7 @@ const SideBar = () => {
 
             </aside>
             
-        </div>
+        </section>
     );
 };
 

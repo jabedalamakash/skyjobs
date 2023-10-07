@@ -7,7 +7,26 @@ import {toast } from 'react-hot-toast';
 const ApplyProvider = ({children}) => {
 
 
+    useEffect(()=>{
+        const data=localStorage.getItem('apply');
+        if(data){
+           setApplied(JSON.parse(data))
+        }
+    
+     },[]);
 
+    //  const saveState=()=>{
+    //     const data=localStorage.getItem('apply');
+    //     if(data){
+    //         setApplied(JSON.parse(data))
+    //      }
+    //      else{
+    //         [" "];
+    //      }
+    //  }
+    //  useEffect(()=>{
+    //     saveState();
+    //  },[])
 
     const[applied,setApplied]=useState([]);
 
@@ -33,13 +52,7 @@ const ApplyProvider = ({children}) => {
 
     // console.log(applied);
     // localStorage getItem
-    useEffect(()=>{
-        const data=localStorage.getItem('apply');
-        if(data){
-           setApplied(JSON.parse(data))
-        }
-    
-     },[]);
+
 
 
      // localStorage setItem

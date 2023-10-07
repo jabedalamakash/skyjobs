@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import
-{ResponsiveContainer,Bar,BarChart,Legend,CartesianGrid,XAxis,YAxis,Tooltip,LineChart,Line,PieChart,Pie,AreaChart,Area}
+{ResponsiveContainer,Bar,BarChart,Legend,CartesianGrid,XAxis,YAxis,Tooltip,LineChart,Line,PieChart,Pie,AreaChart,Area,Cell}
 from 'recharts' ;
 
 const BarCharts= () => {
@@ -26,20 +26,27 @@ const run=[
     {"player":"Mahmudullah","score":18},
     {"player":"Taskin","score":12}
 ]
-
+ const colors=[
+    "#8884d8",
+    "#FA8072",
+    "#AF69EE",
+    "#3DED97",
+    // "#3AC7EB",
+    // "#F9A603",
+ ];
 
 
 
 
     return (
         <>
-            <main className='bg-slate-950 p-10'>
+            <main className='bg-slate-950 p-5 sm:p-10 overflow-hidden box-border'>
             <h1 className='text-center text-white font-bold my-10 text-3xl'>Bangladesh Vs England Statistics</h1>
 
-            <section className='flex gap-5  mb-20'>
-            {/* items-center */}
+            <section className='flex flex-col sm:flex-row gap-5  mb-20'>
+            
 
-            <div className=' w-[70%] bg-slate-400 mx-auto p-10'>
+            <div className='w-full sm:w-[70%] bg-slate-400 mx-auto p-10'>
             <h1 className='text-center text-slate-900  font-bold mb-10 text-xl'>RUNS PER OVER</h1>
             <ResponsiveContainer width="100%" height="100%" aspect={2}>
             <BarChart width={730} height={250} data={runPerOver}>
@@ -54,14 +61,20 @@ const run=[
             </ResponsiveContainer>
             </div>
 
-            <div className='w-[30%]  mx-auto p-10 bg-slate-400'>
+            <div className='w-full sm:w-[30%]  mx-auto p-10 bg-slate-400'>
             <h1 className='text-center text-slate-900 mb-20 font-bold  text-xl'>Team Contributon</h1>
 
             <div className=''>
 
             <ResponsiveContainer aspect={1}>
             <PieChart width={500} height={500}>
-            <Pie data={run} dataKey="score" nameKey="player" cx="50%" cy="50%" outerRadius={85} innerRadius={60} fill="#269373" label/>
+            <Pie data={run} dataKey="score" nameKey="player" cx="50%" cy="50%" outerRadius={85} innerRadius={60} fill="#269373" label>
+
+
+            {run.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={colors[index]} />
+          ))}
+            </Pie>
             <Tooltip />
             </PieChart>
             </ResponsiveContainer>
@@ -72,10 +85,10 @@ const run=[
 
 
 
-        <section className='flex gap-5  mb-20'>
+        <section className='flex flex-col sm:flex-row gap-5  mb-20'>
 
 
-        <div  className='w-1/2 bg-slate-400' >
+        <div  className='w-full sm:w-1/2 bg-slate-400' >
             <h1 className='text-center font-bold my-10 text-slate-900 text-xl'>RUN RATE GRAPH</h1>
             <ResponsiveContainer width="100%" height="100%" aspect={2}>
             <LineChart width={730} height={250} data={runPerOver}
@@ -91,7 +104,7 @@ const run=[
             </ResponsiveContainer>
             </div>
 
-            <div className='w-1/2 bg-slate-400'>
+            <div className='w-full sm:w-1/2 bg-slate-400'>
             <h1 className='text-center font-bold text-slate-900 text-xl my-10'>RUNS</h1>
             <ResponsiveContainer width="100%" height="100%" aspect={2}>
             <AreaChart
