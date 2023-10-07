@@ -40,7 +40,7 @@ const run=[
 
     return (
         <>
-            <main className='bg-slate-950 p-5 sm:p-10 overflow-hidden box-border'>
+            <main className='overflow-hidden box-border'>
             <h1 className='text-center text-white font-bold my-10 text-3xl'>Bangladesh Vs England Statistics</h1>
 
             <section className='flex flex-col sm:flex-row gap-5  mb-20'>

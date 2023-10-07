@@ -1,11 +1,13 @@
  "use client"
 import BarCharts from '@/components/BarCharts';
+import Stats from './Stats';
 
 const page = () => {
     return (
-        <div>
+        <section className='bg-slate-950 p-5 sm:p-10 '>
+            <Stats/>
             <BarCharts/>
-        </div>
+        </section>
     );
 };
 
