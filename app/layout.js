@@ -17,7 +17,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body suppressHydrationWarning className={inter.className}>
-      <Nav/>
+
+        <div className='top-0 z-50 sticky'>
+        <Nav/>
+        </div>
+   
         <ApplyProvider>
         {children}
         </ApplyProvider>
